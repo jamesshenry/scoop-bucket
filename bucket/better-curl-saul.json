@@ -1,0 +1,28 @@
+{
+    "version": "0.2.1",
+    "description": "A terminal based lightweight API testing client focused on user experience and simplicity",
+    "homepage": "https://github.com/DeprecatedLuar/better-curl-saul",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/DeprecatedLuar/better-curl-saul/releases/download/v0.2.1/saul-windows-amd64.exe",
+            "hash": "e12a6790e719cdb28169131ecefad653aae3249c3a6aa73799962cafa1bdaf7a"
+        }
+    },
+    "bin": [
+        [
+            "saul-windows-amd64.exe",
+            "saul"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/DeprecatedLuar/better-curl-saul"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/DeprecatedLuar/better-curl-saul/releases/download/v$version/saul-windows-amd64.exe"
+            }
+        }
+    }
+}
