@@ -1,12 +1,12 @@
 {
-    "version": "5.3.0-2.25557.9",
+    "version": "5.3.0-2.25608.6",
     "description": "A wrapper around Roslyn language server which makes compatible with editors other than VSCode",
     "homepage": "https://github.com/SofusA/csharp-language-server",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/SofusA/csharp-language-server/releases/download/5.3.0-2.25557.9/csharp-language-server-x86_64-pc-windows-msvc.zip",
-            "hash": "5b9770e69017432a66c50dca540c987b808c1424e8dd61ce2e9056cbb3a8a6bc"
+            "url": "https://github.com/SofusA/csharp-language-server/releases/download/5.3.0-2.25608.6/csharp-language-server-x86_64-pc-windows-msvc.zip",
+            "hash": "57e90061fcdb992f8ad9da272351e991765fe89fce9f3bd1231520dea8ee73ef"
         }
     },
     "bin": [
