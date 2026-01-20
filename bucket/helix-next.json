@@ -1,0 +1,31 @@
+{
+    "version": "2025-12-20",
+    "description": "Weekly builds of a post-modern modal text editor.",
+    "homepage": "https://github.com/SymphonySimper/fork-helix",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/SymphonySimper/fork-helix/releases/download/2025-12-20/helix-2025-12-20-x86_64-windows.zip",
+            "hash": "sha256:80d60e9da55b22afd2bfac256114c4ba013c50bee21178f1059c41643285afbb",
+            "extract_dir": "helix-2025-12-20-x86_64-windows"
+        }
+    },
+    "bin": "hx.exe",
+    "checkver": {
+        "github": "https://github.com/SymphonySimper/fork-helix",
+        "regex": "releases/tag/([\\d-]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/SymphonySimper/fork-helix/releases/download/$version/helix-$version-x86_64-windows.zip",
+                "extract_dir": "helix-$version-x86_64-windows",
+                "hash": {
+                    "mode": "json",
+                    "jsonpath": "$..[0].assets[?(@.name == 'helix-$version-x86_64-windows.zip')].digest",
+                    "url": "https://api.github.com/repos/SofusA/csharp-language-server/releases"
+                }
+            }
+        }
+    }
+}
