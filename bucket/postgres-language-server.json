@@ -1,0 +1,26 @@
+{
+    "version": "0.19.0",
+    "description": "A language server for PostgreSQL",
+    "homepage": "https://github.com/supabase-community/postgres-language-server",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/supabase-community/postgres-language-server/releases/download/0.19.0/postgres-language-server_x86_64-pc-windows-msvc",
+            "hash": "5dcf89bd5708bcd266d8e6e139e38b713eadbfa13c290d3d6ff82591ca18ea66"
+        }
+    },
+    "installer": {
+        "script": "Move-Item \"$dir\\postgres-language-server_x86_64-pc-windows-msvc\" \"$dir\\postgres-language-server.exe\" -Force"
+    },
+    "bin": "postgres-language-server.exe",
+    "checkver": {
+        "github": "https://github.com/supabase-community/postgres-language-server"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/supabase-community/postgres-language-server/releases/download/$version/postgres-language-server_x86_64-pc-windows-msvc"
+            }
+        }
+    }
+}
