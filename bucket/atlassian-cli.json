@@ -1,0 +1,24 @@
+{
+    "version": "1.3.4",
+    "description": "Atlassian CLI - Command line interface for Atlassian Cloud products",
+    "homepage": "https://developer.atlassian.com/cloud/acli/guides/introduction/",
+    "architecture": {
+        "64bit": {
+            "url": "https://acli.atlassian.com/windows/latest/acli_windows_amd64/acli.exe"
+        }
+    },
+    "bin": [
+        "acli.exe"
+    ],
+    "checkver": {
+        "url": "https://developer.atlassian.com/cloud/acli/changelog/rss/a/aee88333-3060-4171-a24f-81156837f493/",
+        "regex": "Atlassian CLI v([\\d.]+)-stable"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://acli.atlassian.com/windows/latest/acli_windows_amd64/acli.exe"
+            }
+        }
+    }
+}
