@@ -1,0 +1,29 @@
+{
+    "version": "0.3.0",
+    "description": "Customizable borders for Windows 11 and 10",
+    "homepage": "https://github.com/adembc/lazyssh",
+    "license": "MIT",
+    "notes": "Settings are stored in '%USERPROFILE%/.config/lazyssh/', and are not persisted by Scoop.",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/adembc/lazyssh/releases/download/v0.3.0/lazyssh_Windows_x86_64.zip",
+            "hash": "ca4353a910e453deb5de68c95d83aa8738ff0e52c4bff919f6d74dc27560a1df"
+        }
+    },
+    "bin": [
+        [
+            "lazyssh.exe"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/adembc/lazyssh/releases/download/v$version/lazyssh_Windows_x86_64.zip",
+                "hash": {
+                    "url": "$baseurl/sha256sums.txt"
+                }
+            }
+        }
+    }
+}
