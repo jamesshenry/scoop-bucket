@@ -1,0 +1,21 @@
+{
+    "version": "0.44.0",
+    "description": "A terminal workspace with batteries included",
+    "homepage": "https://zellij.dev",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/zellij-org/zellij/releases/download/v0.44.0/zellij-x86_64-pc-windows-msvc.zip",
+            "hash": "AEEB3E9BEFEAC526A60CD0FF6CBEC80D4A8335A3FF7CA00A69446E7181CBD424"
+        }
+    },
+    "bin": "zellij.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/zellij-org/zellij/releases/download/v$version/zellij-x86_64-pc-windows-msvc.zip"
+            }
+        }
+    }
+}
