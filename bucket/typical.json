@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "description": "A TUI typing game",
+    "homepage": "https://github.com/jamesshenry/typical/",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/jamesshenry/typical/releases/download/0.2.0/typical-win-Setup.exe",
+            "hash": "sha256:feb329e9dd524e7e61edcac9d8025d25126ebbcb1b90c79cb695f523dde6d99a"
+        }
+    },
+    "bin": "zellij.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/jamesshenry/typical/releases/download/$version/typical-win-Setup.exe"
+            }
+        }
+    }
+}
