@@ -9,7 +9,7 @@
             "hash": "sha256:feb329e9dd524e7e61edcac9d8025d25126ebbcb1b90c79cb695f523dde6d99a"
         }
     },
-    "bin": "zellij.exe",
+    "bin": "typical.exe",
     "checkver": "github",
     "autoupdate": {
         "architecture": {
