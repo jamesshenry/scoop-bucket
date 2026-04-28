@@ -1,12 +1,12 @@
 {
-    "version": "0.2.0",
+    "version": "0.3.0",
     "description": "A TUI typing game",
     "homepage": "https://github.com/jamesshenry/typical/",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/jamesshenry/typical/releases/download/0.2.0/typical-win-Portable.zip",
-            "hash": "sha256:aad0d583c368f72306a77506ce22967ddee38d4711d3bd9d68e43175a57eddbf"
+            "url": "https://github.com/jamesshenry/typical/releases/download/0.3.0/typical-win-Portable.zip",
+            "hash": "bcdbcf1a3f67067f04b67b06af1f8fbbd7deb211826e47fdb29f05b070fffc15"
         }
     },
     "bin": "typical.exe",
