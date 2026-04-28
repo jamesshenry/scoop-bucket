@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/jamesshenry/typical/releases/download/0.2.0/typical-win-Portable.zip",
-            "hash": "sha256:feb329e9dd524e7e61edcac9d8025d25126ebbcb1b90c79cb695f523dde6d99a"
+            "hash": "sha256:aad0d583c368f72306a77506ce22967ddee38d4711d3bd9d68e43175a57eddbf"
         }
     },
     "bin": "typical.exe",
