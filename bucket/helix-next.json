@@ -1,13 +1,13 @@
 {
-    "version": "2026-05-09",
+    "version": "2026-05-16",
     "description": "Weekly builds of a post-modern modal text editor.",
     "homepage": "https://github.com/SymphonySimper/fork-helix",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/SymphonySimper/fork-helix/releases/download/2026-05-09/helix-2026-05-09-x86_64-windows.zip",
-            "hash": "429863bc9258c21a84dec7e16534609c181aa311d39fe0fabfa06527df813809",
-            "extract_dir": "helix-2026-05-09-x86_64-windows"
+            "url": "https://github.com/SymphonySimper/fork-helix/releases/download/2026-05-16/helix-2026-05-16-x86_64-windows.zip",
+            "hash": "33d9dc486fe0151e1ac1801170302ac88a324c465fd9576c7000ea127cceed46",
+            "extract_dir": "helix-2026-05-16-x86_64-windows"
         }
     },
     "bin": "hx.exe",
