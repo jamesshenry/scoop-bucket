@@ -1,0 +1,21 @@
+{
+    "version": "0.3.2",
+    "description": "Generate Podman Quadlet files from a Podman command, compose file, or existing object",
+    "homepage": "https://github.com/containers/podlet",
+    "license": "MPL-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/containers/podlet/releases/download/v0.3.2/podlet-x86_64-pc-windows-msvc.zip",
+            "hash": "54505B2C9CF356E5A3CC00381225786FA864730CA87666453AA0E3B1CA983AE8"
+        }
+    },
+    "bin": "podlet.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/containers/podlet/releases/download/v$version/podlet-x86_64-pc-windows-msvc.zip"
+            }
+        }
+    }
+}
