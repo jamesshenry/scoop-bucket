@@ -1,0 +1,42 @@
+{
+    "version": "2.0.23",
+    "description": "The open source AI coding agent. (v2)",
+    "homepage": "https://opencode.ai/v2",
+    "license": "MIT",
+    "notes": [
+        "The v2 configuration is incompatible with v1. Uninstall 'opencode' first, then install this version.",
+        "See https://opencode.ai/v2/docs/migrate-v1/ for migration steps."
+    ],
+    "pre_install": "$v = (opencode --version 2>$null | Select-Object -First 1); if ($v -match '^(\\d+)\\.(\\d+)\\.(\\d+)') { $cur = \"$($Matches[1]).$($Matches[2]).$($Matches[3])\"; if ([int]$Matches[1] -lt 2) { Write-Host \"opencode v$cur is already installed.\"; Write-Host 'The v2 configuration is incompatible with v1. Please run ''scoop uninstall opencode'' first.'; Write-Host 'See https://opencode.ai/v2/docs/migrate-v1/ for migration steps.'; exit 1 } }",
+    "architecture": {
+        "64bit": {
+            "url": "https://opencode.ai/files/bin/2.0.23/opencode-windows-x64.zip",
+            "hash": "83924050088E2C583BBA808011DC9835BE12438374FC6F870655218B5EE7BE71"
+        },
+        "arm64": {
+            "url": "https://opencode.ai/files/bin/2.0.23/opencode-windows-arm64.zip",
+            "hash": "CD558310482774AFC1A48003F240A62DA8B6894CE1BC0B6DA307A6D4C2EDFEC2"
+        }
+    },
+    "bin": [
+        "opencode.exe",
+        [
+            "opencode.exe",
+            "opencode2"
+        ]
+    ],
+    "checkver": {
+        "url": "https://registry.npmjs.org/@opencode/cli/latest",
+        "jsonpath": "$.version"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://opencode.ai/files/bin/$version/opencode-windows-x64.zip"
+            },
+            "arm64": {
+                "url": "https://opencode.ai/files/bin/$version/opencode-windows-arm64.zip"
+            }
+        }
+    }
+}
