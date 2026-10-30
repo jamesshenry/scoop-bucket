@@ -1,5 +1,5 @@
 {
-    "version": "2.2.3",
+    "version": "2.2.4",
     "description": "The open source AI coding agent. (v2)",
     "homepage": "https://opencode.ai/v2",
     "license": "MIT",
@@ -10,12 +10,12 @@
     "pre_install": "$v = (opencode --version 2>$null | Select-Object -First 1); if ($v -match '^(\\d+)\\.(\\d+)\\.(\\d+)') { $cur = \"$($Matches[1]).$($Matches[2]).$($Matches[3])\"; if ([int]$Matches[1] -lt 2) { Write-Host \"opencode v$cur is already installed.\"; Write-Host 'The v2 configuration is incompatible with v1. Please run ''scoop uninstall opencode'' first.'; Write-Host 'See https://opencode.ai/v2/docs/migrate-v1/ for migration steps.'; exit 1 } }",
     "architecture": {
         "64bit": {
-            "url": "https://opencode.ai/files/bin/2.2.3/opencode-windows-x64.zip",
-            "hash": "48db8b9a57b8524948f61f1e0c770b6762ce840992bebf03ffca43d896844baf"
+            "url": "https://opencode.ai/files/bin/2.2.4/opencode-windows-x64.zip",
+            "hash": "8255fa4808b9ed1bfbc5a4f50c800cabc3a88e66f0d67d0f87bd38cce32f7321"
         },
         "arm64": {
-            "url": "https://opencode.ai/files/bin/2.2.3/opencode-windows-arm64.zip",
-            "hash": "e120b9ef22471693e7b65d4d0362b1d491e66eb205c7b44a966a3df372d607df"
+            "url": "https://opencode.ai/files/bin/2.2.4/opencode-windows-arm64.zip",
+            "hash": "ad20a596f664bce9fccd87215e138c4bc4f823162d50b6779f5cee8d74100bd0"
         }
     },
     "bin": [
